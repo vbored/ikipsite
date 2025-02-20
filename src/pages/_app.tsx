@@ -13,6 +13,7 @@ import { Toaster } from 'react-hot-toast'
 import NextNProgress from 'nextjs-progressbar'
 import themeJson from '@/../theme.json'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
+import { Analytics } from '@vercel/analytics/next' // Imported Analytics
 
 const poppins = Poppins({
 	subsets: ['latin'],
