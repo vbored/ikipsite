@@ -19,11 +19,11 @@
 	},
 	"top_banner": {
 		"enable": true,
-		"description": "If you need any help, contact Me!.",
+		"description": "If you need any help, contact Me!",
 		"end_link": {
 			"url": "https://www.ikip.im/contact",
-			"text": "Email Me  →",
-			"new_tab": false
+			"text": "Email Me",
+			"new_tab": true
 		}
 	},
 	"top_category_section": {
