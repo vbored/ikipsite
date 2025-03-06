@@ -7,7 +7,7 @@ import '@/styles/index.scss'
 import { AppProps } from 'next/app'
 import { WordPressBlocksProvider, fromThemeJson } from '@faustwp/blocks'
 import blocks from '@/wp-blocks'
-import { Poppins } from 'next/font/google'
+import { Lora } from 'next/font/google'
 import SiteWrapperProvider from '@/container/SiteWrapperProvider'
 import { Toaster } from 'react-hot-toast'
 import NextNProgress from 'nextjs-progressbar'
@@ -15,7 +15,7 @@ import themeJson from '@/../theme.json'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
 import { Analytics } from '@vercel/analytics/next' // Imported Analytics
 
-const poppins = Poppins({
+const lora = Lora({
 	subsets: ['latin'],
 	display: 'swap',
 	weight: ['300', '400', '500', '600', '700'],
@@ -38,7 +38,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 					<SiteWrapperProvider {...pageProps}>
 						<style jsx global>{`
 							html {
-								font-family: ${poppins.style.fontFamily};
+								font-family: ${lora.style.fontFamily};
 							}
 						`}</style>
 						<NextNProgress color="#818cf8" />
