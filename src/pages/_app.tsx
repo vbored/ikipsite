@@ -18,7 +18,7 @@ import { Analytics } from '@vercel/analytics/next' // Imported Analytics
 const lora = Lora({
 	subsets: ['latin'],
 	display: 'swap',
-	weight: ['300', '400', '500', '600', '700'],
+	weight: ['400', '500', '600', '700'],
 })
 
 export default function MyApp({ Component, pageProps }: AppProps) {
